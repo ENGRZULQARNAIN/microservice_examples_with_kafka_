@@ -3,7 +3,7 @@ from kafka import KafkaConsumer
 import threading
 import json
 
-app = FastAPI()
+app = FastAPI(title="MICRO SERVICE INVENTRY")
 
 consumer = KafkaConsumer(
     "orders",

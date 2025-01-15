@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from kafka import KafkaProducer
 import json
 
-app = FastAPI()
+app = FastAPI(title="MICRO SERVICE ORDER")
 
 producer = KafkaProducer(
     bootstrap_servers="localhost:9092",
